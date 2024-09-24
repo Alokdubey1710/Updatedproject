@@ -24,7 +24,7 @@ router.post("/signup", wrapAsync(async(req, res)=>{
         }
         req.flash("success", "Welcome to Wanderlust");
         
-        res.redirect(req.session.redirectUrl);
+        res.redirect("/listings");
 
     });
      
